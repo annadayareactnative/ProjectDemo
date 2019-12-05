@@ -1,0 +1,65 @@
+Arguments: 
+  C:\Program Files (x86)\nodejs\node.exe C:\Users\Mary Ann\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-native-gesture-handler @^1.4.1
+
+PATH: 
+  C:\Python27\;C:\Python27\Scripts;%PATH%;C:\Windows\System32\wbem;C:\Program Files\Java\jre6\bin;F:\JDK\bin;C:\Program Files\nodejs;C:\Program Files\nodejs\node_modules\npm\bin;C:\Program Files\Git\cmd;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\cURL\bin;C:\curl;C:\Program Files\7-Zip;C:\Program Files (x86)\nodejs\npm;C:\Program Files (x86)\nodejs\npm.cmd;C:\Windows\System32\;C:\Program Files\Android\Android Studio\jre;C:\Users\Mary Ann\AppData\Local\Android\Sdk;C:\Program Files (x86)\Java\jdk1.8.0_221\bin;C:\Program Files (x86)\Java\jre1.8.0_221;C:\Program Files (x86)\Java\jdk1.8.0_221\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Mary Ann\AppData\Local\Android\Sdk\platform-tools\;C:\Program Files (x86)\nodejs\;C:\Users\Mary Ann\AppData\Local\Microsoft\WindowsApps;C:\Users\Mary Ann\AppData\Local\Programs\Microsoft VS Code\bin;C:\gradle-5.6.2-all\gradle-5.6.2\bin;C:\Users\Mary Ann\AppData\Local\Android\Sdk;C:\Program Files\Android\Android Studio\jre;"C:\Windows\System32\wbem\;";C:\Program Files\MongoDB\Server\4.2\bin;C:\curl;C:\Users\Mary Ann\AppData\Local\Android\Sdk\platform-tools;C:\Users\Mary Ann\AppData\Roaming\npm
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.10.0
+
+Platform: 
+  win32 ia32
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@%5E1.4.1: Request "https://registry.yarnpkg.com/@%5E1.4.1" returned a 405
+      at Request.params.callback [as _callback] (C:\Users\Mary Ann\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66839:18)
+      at Request.self.callback (C:\Users\Mary Ann\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140464:22)
+      at Request.emit (events.js:209:13)
+      at Request.<anonymous> (C:\Users\Mary Ann\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141436:10)
+      at Request.emit (events.js:209:13)
+      at IncomingMessage.<anonymous> (C:\Users\Mary Ann\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141358:12)
+      at Object.onceWrapper (events.js:298:28)
+      at IncomingMessage.emit (events.js:214:15)
+      at endReadableNT (_stream_readable.js:1178:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "tvs01backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "client-install": "npm install --prefix client",
+        "start": "node server.js",
+        "server": "nodemon server.js",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+    "author": "Ann Adaya",
+    "license": "ISC",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.19.0",
+      "concurrently": "^5.0.0",
+      "express": "^4.17.1",
+      "is-empty": "^1.2.0",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^5.7.5",
+      "passport": "^0.4.0",
+      "passport-jwt": "^4.0.0",
+      "validator": "^11.1.0"
+    },
+    "devDependencies": {
+      "nodemon": "^1.19.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
